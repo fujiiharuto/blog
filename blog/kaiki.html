@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログサイト</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>オカルトサイト</h1>
+
+        <nav>
+            <ul id="category-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="">？？？</a></li>
+                <li><a href="#">カテゴリー</a>
+                    <ul class="submenu">
+                        <li><a href="tosidensetu.html">都市伝説</a></li>
+                        <li><a href="lost.html">ロストテクノロジー</a></li>
+                        <li><a href="kaiki.html">怪奇事件</a></li>
+                        <li><a href="angou.html">暗号</a></li>
+                        <li><a href="iseki.html">遺跡</a></li>
+                        <!-- 他のカテゴリーのリンクも追加 -->
+                    </ul>
+                </li>
+
+                <li><a id="contact-link">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>カテゴリー / 怪奇事件</h2>
+
+
+
+            <article>
+                <div class="article">
+                    <div class="article-content">
+                        <h3><a href="rosia.html">ロシアのダイアトロフ峰 - グループ失踪事件</a></h3>
+                        <p>1959年、ロシアのダイアトロフ峰で発生した謎のグループ失踪事件は、未解明の謎として長年にわたって議論されてきました。登山隊の9人が不可解な状態で遺体で発見されたことから、「ダイアトロフの九人」として知られるようになりました。この事件は、山岳遭難のような通常の事故では説明がつかず、超常的な要素が絡むという仮説も浮上しています。この記事では、ダイアトロフ峰のグループ失踪事件に迫り、その背後に隠された謎について探求してみましょう。</p>
+                    </div>
+                    <div class="article-img">
+                        <img src="image/rosia.jpg" alt="記事1の画像">
+                    </div>
+                </div>
+            </article>
+
+
+
+        </section>
+
+        <aside>
+            <h2>人気の記事TOP10</h2>
+            <ul>
+                <li><a href="piramitto.html">ロストテクノロジー――――ピラミッドの不可解な点</a></li>
+                <li><a href="paradokkusu.html">パラドックスの迷宮</a></li>
+                <li><a href="nasuka.html">ナスカの地上絵の謎</a></li>
+                <li><a href="rosia.html">ロシアのダイアトロフ峰 - グループ失踪事件</a></li>
+                <li><a href="senryou.html">人を死に至らしめた「色」の真実</a></li>
+                <li><a href="inka.html">古代インカの石組み技術の秘密</a></li>
+                <li><a href="maya.html">マヤ文明の謎、書物とカレンダーシステム</a></li>
+                <li><a href="kaiga.html">絵に隠された恐ろしい真実―――オフィーリア</a></li>
+                <li><a href="jisin.html">古代中国の地震検知器の不思議</a></li>
+                <li><a href="kaniba.html">カニバリズムの奥深き謎と真実</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2023 ブログサイト. All rights reserved.</p>
+    </footer>
+
+    <!-- お問い合わせフォームのモーダル -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>お問い合わせフォーム</h2>
+            <form id="contact-form" method="post">
+                <div>
+                    <label for="name">お名前:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">メールアドレス:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">お問い合わせ内容:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="送信">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

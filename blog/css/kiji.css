@@ -1,0 +1,250 @@
+/* 両端*/
+html {
+    background-color: rgb(75, 73, 73);
+    background: url(kiri03.png);
+}
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: #f4f4f4 url("top.png") no-repeat center center / cover;
+    padding: 20px;
+}
+
+
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0px 10%;
+    padding: 0px;
+    background-color: aliceblue;
+}
+
+/* ヘッダー */
+
+
+header h1 {
+    color: #333;
+    margin-top: 11%;
+    margin-bottom: 11%;
+    text-align: center;
+    font-family: 'Chokokutai', cursive;
+    font-size: 96px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(247, 241, 241);
+    font-weight: bold;
+}
+
+/* サブメニューのスタイル */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    flex-direction: column; /* 選択肢を縦に並べる */
+    min-width: 12.5%; /* 選択肢の幅をカテゴリーメニューと同じにする */
+}
+
+nav .submenu li {
+    margin-bottom: 5px;
+}
+
+nav .submenu li a {
+    color: #333;
+    font-size: 16px;
+}
+
+nav .submenu li a:hover {
+    color: #555;
+}
+
+/* メインコンテンツ */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+section {
+    flex: 2;
+    margin-right: 20px;
+}
+
+article {
+    margin-top: 0;
+    margin-bottom: 15px; /* 記事の間隔 */
+}
+
+.article {
+    display: flex; /* 記事を横並びに配置 */
+}
+
+.article-content {
+    flex: 3;
+}
+
+.article-img {
+    flex: 1;
+    margin-left: 20px; /* 画像とコンテンツの間隔 */
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+aside {
+    flex: 1;
+}
+
+
+/* 中点を消す */
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 20px; 
+}
+
+/* 目玉の画像の大きさの調整　*/
+
+.bullet-point img {
+    width: 16px; /* 画像の幅 */
+    height: 16px; /* 画像の高さ */
+  }
+
+
+/* ボタンのスタイル */
+.top-button {
+  /* 中央に配置するためのスタイル */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ボタンのサイズと余白 */
+  width: 150px;
+  height: 40px;
+  margin: 20px auto;
+
+  /* 背景色と文字の色 */
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* マウスホバー時のスタイル */
+.top-button:hover {
+  opacity: 0.8; /* ホバー時に少し透明度を下げることで反応がわかりやすくなります */
+}
+
+/* フッター */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* モーダルのスタイル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* フォームのスタイル */
+#contact-form {
+    margin-top: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}

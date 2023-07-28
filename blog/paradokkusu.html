@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パラドックスの迷宮</title>
+    <link rel="stylesheet" href="css/kiji.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+    <script src="js/kiji.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>オカルトサイト</h1>
+        <nav>
+            <ul id="category-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="">？？？</a></li>
+                <li><a href="#">カテゴリー</a>
+                    <ul class="submenu">
+                        <li><a href="tosidensetu.html">都市伝説</a></li>
+                        <li><a href="lost.html">ロストテクノロジー</a></li>
+                        <li><a href="kaiki.html">怪奇事件</a></li>
+                        <li><a href="angou.html">暗号</a></li>
+                        <li><a href="iseki.html">遺跡</a></li>
+                        <!-- 他のカテゴリーのリンクも追加 -->
+                    </ul>
+                </li>
+
+                <li><a id="contact-link">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <div class="article">
+                    <div class="article-content">
+                        <h3>パラドックスの迷宮</h3>
+                        <p>パラドックスは、私たちの理解や論理に対して挑戦する興味深い現象です。本記事では、オカルト的な視点から、死刑囚のパラドックスとラプラスのパラドックスを始めとする様々なパラドックスについて考察していきます。これらのパラドックスは、私たちの思考を逆説的な状況に陥れ、宇宙の不思議な法則について深い洞察を提供する可能性があります。</p>
+                    </div>
+                    <div class="article-img">
+                        <img src="image/paradokkusu.jpg" alt="">
+                    </div>
+                </div>
+                <div class="article-content">
+                    <h3>死刑囚のパラドックス</h3>
+                    <p>「未来」が関わるパラドックスである。「未来の予測できない時に起こる」けども「いつまでに起きるかという期限は決まっている」という事象は、後者の制限の存在によって、そもそも「予測できない時に起こる事象」と言えなくなるのではないか、というものである。<br>
+                               <br>
+                        ・ある死刑執行人が死刑囚に次のように予告した<br>
+                        ・来週の月曜日から金曜日までのいずれかの日に死刑執行を行う<br>
+                                 <br>        
+                        1.まず、金曜日に死刑執行があると仮定する。すると、月曜日から木曜日まで死刑執行がないことになるから、木曜日の夜の時点で、翌日（金曜日）が死刑執行の日であると予測できてしまう。これでは抜き打ちとは言えないので、金曜日には死刑執行を行うことができないということが分かる。<br>
+                        2.次に、木曜日に死刑執行があると仮定する。すると、月曜日から水曜日まで死刑執行がないことになるから、水曜日の夜の時点で木曜日か金曜日のどちらかの日に死刑執行があることが予測できるが、1. により金曜日には死刑執行がないことが既に分かっているので、翌日（木曜日）が死刑執行の日であると予測できてしまう。よって、木曜日にも死刑執行を行うことができないということが分かる。<br>
+                        3.以下同様に推論していくと、水曜日、火曜日、月曜日にも死刑執行を行うことができないということが分かる。したがって、「死刑執行人はいずれの日にも死刑執行を行うことができない」という結論になる。<br>
+                        しかし翌週、死刑執行は水曜日に行われた。上記の推論にもかかわらず、死刑囚は全く死刑執行の日を予測できなかった。
+                    </p>
+                </div>
+                <div class="article-content">
+                    <h3>なぜ死刑執行を予測できなかったのか</h3>
+                    <p>このパラドックスは、「死刑執行人の宣言を信じれば不整合になり、信じなければ誤った信念を抱くことになる」という構造をもっている。<br>
+                        死刑執行人の宣言は、次の二つの命題に分割できる。<br>
+                        1.予告した期間（来週の月曜日から金曜日）のいずれかの日に必ず死刑執行を実施する。<br>
+                        2.死刑囚が推論によって予測できる日には、死刑執行を実施しない。<br>
+                        死刑囚が死刑執行人の宣言を信じるかどうかによって、次の二つの場合がある。<br>
+                             <br>
+                        死刑囚が死刑執行人の宣言を信じる場合<br>
+                        死刑囚は 1. と 2. の双方を信じることになる。しかし、上述した推論によって「1. と 2. は両立しない」という結論が導けるので、矛盾をきたす。<br>
+                             <br>
+                        死刑囚が死刑執行人の宣言を信じない場合<br>
+                        死刑囚は 1. か 2. のいずれかが誤りであると信じることになる。つまり、「予測可能な日に死刑執行を行う」か「全く死刑執行を行わない」のどちらかを信じることになる。しかし、どちらも起こりうるので、どちらが実際に起こるかは死刑囚には予測できない。したがって、死刑執行人がいつ死刑執行を実施しても、死刑囚にとっては予測不可能な死刑執行が行われることになる（「1. か 2. のいずれかが誤り」という信念は偽になる）。<br>
+                            <br>
+                        重要なのは、矛盾が生じるのは 1. と 2. を満たす死刑執行が行われると"信じた"ときであって、1. と 2. 自体がただちに矛盾を引き起こすわけではないということである（このことは、現実に死刑執行が行われ得ることからも明らかであろう）。その意味で、このパラドックスは信念を扱う様相論理的なパラドックスであるといえる。<br>
+                    </p>
+                </div>
+                <div class="article">
+                    <div class="article-content">
+                        <h3>ラプラスのパラドックス</h3>
+                        <p>ラプラスの悪魔という存在を知っているだろうか？<br>ラプラスの悪魔とは簡単に言えば、「この世全てを知っているため、未来を全て予測できる存在」の概念、架空の存在のことである。これはフランスの数学者、ピエール＝シモン・ラプラスが述べたことであり、その名前からラプラスの悪魔と言われている。今回はラプラスの悪魔のパラドックスついて解説していく。</p>
+                    </div>
+                    <div class="article-img">
+                        <img src="image/akuma.png" alt="">
+                    </div>
+                </div>
+                <div class="article-content">
+                    <h3>理論上の仮説</h3>
+                    <p>18世紀ごろの科学者の間では、身の回りの事柄のデータさえ揃っていれば未来はすべて予億できると考えられていた。<br>例えば、あなたがボールを前に投げたとしよう。この時にそのボールの原子量や運動エネルギーがわかっていたとしたら、どこにボールが落ちるのか分かってしまうということだ。<br>ここまで読んだ人は「こんなの最強じゃん」と思うかもしれないが月日がたち数学や物理が発達してきてこのラプラスの悪魔は不可能だと証明されてしまったのだ。</p>
+                </div>
+                <div class="article-content">
+                    <h3> ラプラスの悪魔が不可能だと言われている理由</h3>
+                    <p>20s世紀に量子力学という物理学が誕生してラプラスの悪魔は存在しないということが証明されたのだ。詳しく説明すると、量子力学の考えで、原子は、分裂したり爆発したりすることが完全にランダムゆえに原子がどういう風に動くか予測することが不可能だからである。</p>
+                </div>
+                <div class="article-content">
+                    <h3> まとめ</h3>
+                    <p>今回は、パラドックスの中でも比較的有名な「死刑囚のパラドックス」と「ラプラスの悪魔のパラドックス」について説明したが、考えれば考えるほどわからなくなるような、しかし、どんどんと面白くなっていくそんなパラドックスを紹介できたのではなかろうか。これからもそんな面白いパラドックスを紹介していく。</p>
+                </div>
+                <div class="top-button">
+                    <button onclick="scrollToTop()">TOPへ戻る</button>
+                </div>
+            </article>
+        </section>
+        <aside>
+            <h2>人気の記事TOP10</h2>
+            <ul>
+                <li><a href="piramitto.html">ロストテクノロジー――――ピラミッドの不可解な点</a></li>
+                <li><a href="paradokkusu.html">パラドックスの迷宮</a></li>
+                <li><a href="nasuka.html">ナスカの地上絵の謎</a></li>
+                <li><a href="rosia.html">ロシアのダイアトロフ峰 - グループ失踪事件</a></li>
+                <li><a href="senryou.html">人を死に至らしめた「色」の真実</a></li>
+                <li><a href="inka.html">古代インカの石組み技術の秘密</a></li>
+                <li><a href="maya.html">マヤ文明の謎、書物とカレンダーシステム</a></li>
+                <li><a href="kaiga.html">絵に隠された恐ろしい真実―――オフィーリア</a></li>
+                <li><a href="jisin.html">古代中国の地震検知器の不思議</a></li>
+                <li><a href="kaniba.html">カニバリズムの奥深き謎と真実</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2023 ブログサイト. All rights reserved.</p>
+    </footer>
+    <!-- お問い合わせフォームのモーダル -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>お問い合わせフォーム</h2>
+            <form id="contact-form" method="post">
+                <div>
+                    <label for="name">お名前:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">メールアドレス:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">お問い合わせ内容:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="送信">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

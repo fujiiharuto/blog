@@ -1,0 +1,209 @@
+/* 両端 */
+html {
+    background-color: rgb(124, 126, 126);
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0px 10%;
+    padding: 0px;
+    background-color: #21181f;
+}
+
+/* ヘッダー */
+header {
+    background: #f4f4f4 url("header.png") no-repeat center center / cover;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ccc;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+/* サブメニューのスタイル */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #0b0b0b;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    flex-direction: column;
+    min-width: 12.5%;
+}
+
+nav .submenu li {
+    margin-bottom: 5px;
+}
+
+nav .submenu li a {
+    color: #ccc;
+    font-size: 16px;
+}
+
+nav .submenu li a:hover {
+    color: #aaa;
+}
+
+/* メインコンテンツ */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+h3 {
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+section {
+    flex: 2;
+    margin-right: 20px;
+}
+
+article {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.article {
+    display: flex;
+    color: aliceblue;
+}
+
+.article-content {
+    flex: 3;
+}
+
+.article-img {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+aside {
+    flex: 1;
+}
+
+aside ul li {
+    margin-bottom: 20px;
+}
+
+/* フッター */
+footer {
+    background: #ccc;
+    color: #080808;
+    text-align: center;
+    padding: 20px;
+}
+
+/* モーダルのスタイル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-content {
+    background-color: #080808;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #777;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #777;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* フォームのスタイル */
+#contact-form {
+    margin-top: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #25523b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #1c402d;
+}
